@@ -10,7 +10,7 @@ require 'git'
 class LLMProjectAssistant
   def initialize(options)
     @api_key = options[:api_key] || ENV['LLM_API_KEY']
-    @model = options[:model] || 'gpt-4-turbo'
+    @model = options[:model] || 'gpt-4.1-2025-04-14'
     @api_url = options[:api_url] || 'https://api.openai.com/v1/chat/completions'
     @project_dir = options[:project_dir] || Dir.pwd
     @file_extensions = options[:extensions] ? options[:extensions].split(',') : []
