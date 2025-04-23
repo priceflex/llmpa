@@ -1,4 +1,4 @@
-# LLM Project Assistant (limpa)
+# LLM Project Assistant (LLMPA)
 
 A command-line tool that uses LLMs (like GPT-4 or Claude) to assist with code development by analyzing your project files and providing interactive help.
 
@@ -31,7 +31,7 @@ gem install optparse fileutils json colorize git
 
 2. Make the script executable:
    ```bash
-   chmod +x limpa.rb
+   chmod +x llmpa.rb
    ```
 
 3. Set up your API key:
@@ -44,7 +44,7 @@ gem install optparse fileutils json colorize git
 To make this program accessible from anywhere on your system, add it to your PATH by creating a symbolic link:
 
 ```bash
-sudo ln -s /path/to/llmpa/limpa.rb /usr/local/bin/limpa
+sudo ln -s /path/to/llmpa/llmpa.rb /usr/local/bin/llmpa
 ```
 
 Replace `/path/to/llmpa` with the actual path to your installation directory.
@@ -54,7 +54,7 @@ Replace `/path/to/llmpa` with the actual path to your installation directory.
 ### Basic Usage
 
 ```bash
-limpa
+llmpa
 ```
 
 This will analyze the current directory and start an interactive session.
@@ -62,7 +62,7 @@ This will analyze the current directory and start an interactive session.
 ### Command-line Options
 
 ```
-Usage: limpa [options]
+Usage: llmpa [options]
   -k, --api-key KEY                API key for the LLM service
   -m, --model MODEL                LLM model to use (default: gpt-4-turbo)
   -d, --directory DIR              Project directory (default: current directory)
@@ -77,17 +77,17 @@ Usage: limpa [options]
 
 Use with OpenAI (default):
 ```bash
-limpa -k your-openai-api-key -m gpt-4
+llmpa -k your-openai-api-key -m gpt-4
 ```
 
 Use with Anthropic Claude:
 ```bash
-limpa --anthropic -k your-anthropic-api-key
+llmpa --anthropic -k your-anthropic-api-key
 ```
 
 Focus on specific file types:
 ```bash
-limpa -e rb,js,py
+llmpa -e rb,js,py
 ```
 
 ### Interactive Commands
