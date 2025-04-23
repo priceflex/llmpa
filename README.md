@@ -25,7 +25,7 @@ gem install optparse fileutils json colorize git
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/llmpa.git
+   git clone https://github.com/priceflex/llmpa.git
    cd llmpa
    ```
 
